@@ -1,0 +1,10 @@
+[Unit]
+Description=Start index.js
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/node /tmp/index.js
+
+[Install]
+WantedBy=multi-user.target
